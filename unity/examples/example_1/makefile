@@ -21,7 +21,7 @@ INC_DIRS=-Isrc -I$(UNITY_ROOT)/src
 SYMBOLS=-DTEST
 
 ifeq ($(OS),Windows_NT)
-	CLEANUP = del /F /Q $(TARGET1) && del /F /Q $(TARGET2)
+	CLEANUP = cmd /C del /F /Q $(TARGET1) && cmd /C del /F /Q $(TARGET2)
 else
 	CLEANUP = rm -f build/*.o ; rm -f $(TARGET1) ; rm -f $(TARGET2)
 endif
