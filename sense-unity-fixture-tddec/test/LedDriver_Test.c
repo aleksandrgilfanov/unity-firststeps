@@ -16,6 +16,7 @@ TEST_GROUP(LedDriver);
 
 TEST_SETUP(LedDriver)
 {
+	LedDriver_Create(&virtualLeds);
 }
 
 TEST_TEAR_DOWN(LedDriver)

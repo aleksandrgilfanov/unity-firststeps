@@ -21,6 +21,7 @@ TEST_GROUP_RUNNER(LedDriver)
     	RUN_TEST_CASE(LedDriver, OutOfBoundsTurnOnDoesNoHarm);
     	RUN_TEST_CASE(LedDriver, LedMemoryIsNotReadable);
     	RUN_TEST_CASE(LedDriver, IsOn);
-    	RUN_TEST_CASE(LedDriver, OutOfBoundsLedsAreAlwaysOff);
     	RUN_TEST_CASE(LedDriver, IsOff);
+    	RUN_TEST_CASE(LedDriver, OutOfBoundsLedsAreAlwaysOff);
+
     }
